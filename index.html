@@ -1,0 +1,398 @@
+<!-- Identitas -->
+<!-- Nama: RIZKY HUSNI MUBAROK -->
+<!-- NIM: 250401010578 -->
+<!-- Kelas: IF-204 -->
+<!-- Pemrograman Web I -->
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae - Rizky Husni Mubarok</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Google Fonts (Outfit) -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f1f5f9;
+            font-family: 'Outfit', sans-serif;
+            color: #334155;
+            min-height: 100vh;
+            padding-top: 40px;
+            padding-bottom: 60px;
+        }
+
+        .container {
+            max-width: 800px;
+        }
+
+        /* Card / Section Container */
+        .cv-card {
+            background-color: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.035);
+            margin-bottom: 25px;
+            transition: border-color 0.2s ease;
+        }
+
+        .cv-card:hover {
+            border-color: #cbd5e1;
+        }
+
+        /* Typography */
+        h1 {
+            color: #0f172a;
+            font-weight: 700;
+            font-size: 2.2rem;
+            letter-spacing: -0.03em;
+            margin-bottom: 6px;
+        }
+
+        h2 {
+            color: #0f172a;
+            font-size: 1.4rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            color: #475569;
+            font-size: 1.1rem;
+            font-weight: 400;
+        }
+
+        /* Profile Image */
+        .profile-img-container {
+            width: 130px;
+            height: 130px;
+            margin: 0 auto 20px auto;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid #e2e8f0;
+        }
+
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Text Formatting Highlights */
+        strong {
+            color: #0f172a;
+            font-weight: 600;
+        }
+
+        i {
+            color: #1e40af;
+            font-style: italic;
+        }
+
+        u {
+            text-decoration: none;
+            border-bottom: 1px solid #64748b;
+        }
+
+        mark {
+            background-color: #fef08a;
+            color: #854d0e;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        /* Contact & List Styling */
+        .list-group-item {
+            background-color: #ffffff !important;
+            border: 1px solid #e2e8f0 !important;
+            color: #334155 !important;
+            border-radius: 8px !important;
+            margin-bottom: 10px;
+            padding: 14px 18px !important;
+            transition: all 0.2s ease;
+        }
+
+        .list-group-item:hover {
+            background-color: #f8fafc !important;
+            border-color: #cbd5e1 !important;
+        }
+
+        .contact-icon {
+            width: 26px;
+            height: 26px;
+            margin-right: 12px;
+            object-fit: contain;
+        }
+
+        /* Buttons style */
+        .btn-primary {
+            background-color: #1e40af !important;
+            border: 1px solid #1d4ed8 !important;
+            border-radius: 6px !important;
+            padding: 6px 16px !important;
+            font-weight: 500 !important;
+            font-size: 0.85rem !important;
+            color: #ffffff !important;
+            transition: all 0.2s ease !important;
+        }
+
+        .btn-primary:hover {
+            background-color: #1d4ed8 !important;
+            border-color: #1e40af !important;
+            transform: translateY(-1px);
+        }
+
+        /* Table Styling */
+        .table-responsive {
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+        }
+
+        .table {
+            color: #334155 !important;
+            background-color: #ffffff !important;
+            margin-bottom: 0 !important;
+        }
+
+        .table th {
+            background-color: #f8fafc !important;
+            border: none !important;
+            font-weight: 600;
+            color: #475569 !important;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+            padding: 12px 16px !important;
+            border-bottom: 1px solid #e2e8f0 !important;
+        }
+
+        .table td {
+            border-top: 1px solid #e2e8f0 !important;
+            padding: 12px 16px !important;
+            font-size: 0.9rem;
+            color: #334155 !important;
+        }
+
+        .table tbody tr:hover td {
+            background-color: #f8fafc !important;
+        }
+
+        /* Star Rating */
+        .star-rating {
+            color: #eab308;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+        }
+
+        .skill-name {
+            font-weight: 500;
+            color: #334155;
+        }
+
+        /* Footer */
+        footer p {
+            color: #94a3b8 !important;
+            font-size: 0.85rem;
+            letter-spacing: 0.02em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header Profile -->
+        <div class="cv-card text-center">
+            <div class="profile-img-container">
+                <!-- a. Memiliki image/foto diri -->
+                <img src="https://akademik.unsia.ac.id/uploads/asiacyberuniversity/fotouser/thumb/134884.png?d0600c"
+                    alt="PROFIL RIZKY HUSNI MUBAROK" class="profile-img">
+            </div>
+            <h1>RIZKY HUSNI MUBAROK</h1>
+            <p class="subtitle mb-0">Pet Care Assistant</p>
+        </div>
+
+        <!-- Tentang Saya Section -->
+        <!-- b. Minimal terdapat 2 paragraf tentang deskripsi diri -->
+        <!-- d. Memiliki tag-tag untuk Text Formatting (strong, u, i, mark) -->
+        <section id="about" class="cv-card">
+            <h2>Tentang Saya</h2>
+            <p>
+                Hallo, saya <strong>Rizky Husni Mubarok</strong>. Saya lahir di Kabupaten <u>Tasikmalaya</u>, jawa
+                Barat. Saat ini, domisili saya berada di <mark>Kemang</mark>, Jakarta Selatan.
+            </p>
+            <p>
+                Saya adalah mahasiswa jurusan Informatika yang memiliki minat besar pada bidang teknologi informasi, 
+                khususnya jaringan komputer, pemrograman, dan pengembangan teknologi digital. Saya memiliki kemampuan dasar 
+                dalam instalasi dan konfigurasi jaringan, penggunaan perangkat lunak perkantoran seperti Microsoft Word dan
+                Excel, serta terus berusaha mengembangkan keterampilan melalui proses belajar, pelatihan, dan pengalaman
+                praktik. Saya dikenal sebagai pribadi yang disiplin, bertanggung jawab, serta memiliki kemauan belajar yang
+                tinggi terhadap hal-hal baru.
+            </p>
+        </section>
+
+        <!-- Informasi Kontak Section -->
+        <!-- h. Memiliki minimal 2 list (List 1: Kontak) -->
+        <!-- e. Memiliki minimal 3 link (Email, Telepon, Telegram) -->
+        <!-- f. Memiliki minimal 3 image/gambar (Foto Diri + 3 Logo Kontak) -->
+        <section id="contact" class="cv-card">
+            <h2>Informasi Kontak</h2>
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                    <div class="d-flex align-items-center">
+                        <img src="https://www.freepnglogos.com/uploads/logo-gmail-png/logo-gmail-png-file-gmail-icon-svg-wikimedia-commons-0.png"
+                            alt="Email Logo" class="contact-icon">
+                        <span>Email: rizkymubarok508@gmail.com</span>
+                    </div>
+                    <a href="mailto:rizkymubarok508@gmail.com" class="btn btn-primary btn-sm mt-2 mt-sm-0">Hubungi</a>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                    <div class="d-flex align-items-center">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWCrQMzX0DSxqWFL9kmemdbzSmcVE22mgZs2v6YhOQZw&s"
+                            alt="Phone Logo" class="contact-icon">
+                        <span>Telepon: 0878-7230-0033</span>
+                    </div>
+                    <a href="tel:+6287872300033" class="btn btn-primary btn-sm mt-2 mt-sm-0">Hubungi</a>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                    <div class="d-flex align-items-center">
+                        <img src="https://png.pngtree.com/element_our/sm/20180630/sm_5b37de3263964.jpg"
+                            alt="Instagram Logo" class="contact-icon">
+                        <span>Instagram: rizkymbrk__</span>
+                    </div>
+                    <a href="https://www.instagram.com/rizkymbrk__/" target="_blank"
+                        class="btn btn-primary btn-sm mt-2 mt-sm-0">Hubungi</a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Riwayat Pendidikan Section -->
+        <!-- g. Memiliki minimal 2 tabel (Tabel 1: Pendidikan) -->
+        <section id="pendidikan" class="cv-card">
+            <h2>Riwayat Pendidikan</h2>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Tingkat</th>
+                            <th>Nama Sekolah</th>
+                            <th>Tahun</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>SD</td>
+                            <td>MI CONDONG</td>
+                            <td>2013 - 2019</td>
+                        </tr>
+                        <tr>
+                            <td>SMP</td>
+                            <td>SMPN 1 JAMANIS</td>
+                            <td>2019 - 2022</td>
+                        </tr>
+                        <tr>
+                            <td>SMK</td>
+                            <td>SMK CIJANGKAR</td>
+                            <td>2022 - 2025</td>
+                        </tr>
+                        <tr>
+                            <td>Kuliah</td>
+                            <td>ASIA CYBER UNIVERSITY</td>
+                            <td>2026 - Sekarang</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Riwayat Pekerjaan Section -->
+        <!-- g. Memiliki minimal 2 tabel (Tabel 2: Pekerjaan) -->
+        <section id="pekerjaan" class="cv-card">
+            <h2>Riwayat Pekerjaan</h2>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Perusahaan</th>
+                            <th>Posisi / Jabatan</th>
+                            <th>Tahun Kerja</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>AMORE ANIMAL CLINIC</strong></td>
+                            <td>PET CARE ASSISTANT</td>
+                            <td>2026 - Sekarang</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Kemampuan Section -->
+        <!-- h. Memiliki minimal 2 list (List 2: Kemampuan) -->
+        <section id="kemampuan" class="cv-card">
+            <h2>Kemampuan & Keahlian</h2>
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span class="skill-name">MIKROTIK</span>
+                    <span class="star-rating" data-rating="80"></span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span class="skill-name">JARINGAN WIRELESS</span>
+                    <span class="star-rating" data-rating="80"></span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span class="skill-name">JARINGAN NIRKABEL</span>
+                    <span class="star-rating" data-rating="80"></span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span class="skill-name">MICROSOFT OFFICE</span>
+                    <span class="star-rating" data-rating="80"></span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center mt-4">
+            <p>&copy; 2026 - Kelompok 5</p>
+        </footer>
+    </div>
+
+    <!-- Rating System JavaScript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const starRatings = document.querySelectorAll(".star-rating");
+            starRatings.forEach(function (starRating) {
+                const rating = parseFloat(starRating.getAttribute("data-rating")) / 20;
+                let stars = "";
+                for (let i = 0; i < 5; i++) {
+                    if (i < rating) {
+                        stars += "&#9733;"; // Bintang penuh
+                    } else {
+                        stars += "&#9734;"; // Bintang kosong
+                    }
+                }
+                starRating.innerHTML = stars;
+            });
+        });
+    </script>
+
+    <!-- Bootstrap JS Dependencies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
